@@ -11,6 +11,24 @@
       "email": "2844604@gmail.com",
       "password": "qwerty",
       "name": "STS"
+    },
+    {
+      "email": "anatooliy@ukr.net",
+      "password": "qwerty",
+      "name": "test",
+      "id": 3
+    },
+    {
+      "email": "dddd@pnwsoft.com",
+      "password": "qwerty",
+      "name": "test",
+      "id": 4
+    },
+    {
+      "email": "wwww@dd.jj",
+      "password": "jjjjjj",
+      "name": "jjjjjj",
+      "id": 5
     }
   ],
   "bill": {

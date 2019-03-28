@@ -22,4 +22,10 @@ export class UsersService {
             })
         )
     }
+
+    createNewUser(user: User): Observable<User>{
+        return this.http.post(`//localhost:3000/users`, user).pipe(
+            map((response: Response) => { return response.json()} )
+        );
+    }
 }

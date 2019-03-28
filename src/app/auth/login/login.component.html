@@ -45,7 +45,7 @@
             <span *ngIf="form.get('password')['errors']['required']">
                 Password can't be emty
             </span>
-            <span *ngIf="form.get('password')['errors']['minlength']">
+            <span *ngIf="form.get('password')['errors']['minlength'] && form.get('password')['errors']['minlength']['requiredLength']">
                 Password must be more than 
                 {{ form.get('password')['errors']['minlength']['requiredLength'] }} 
                 characters. Now entered {{ form.get('password')['errors']['minlength']['actualLength'] }} characters.
