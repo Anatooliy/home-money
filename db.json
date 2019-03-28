@@ -2,33 +2,9 @@
   "users": [
     {
       "id": 1,
-      "email": "wfm@mail.ru",
-      "password": "12345678",
-      "name": "Администратор"
-    },
-    {
-      "id": 2,
       "email": "2844604@gmail.com",
       "password": "qwerty",
       "name": "STS"
-    },
-    {
-      "email": "anatooliy@ukr.net",
-      "password": "qwerty",
-      "name": "test",
-      "id": 3
-    },
-    {
-      "email": "dddd@pnwsoft.com",
-      "password": "qwerty",
-      "name": "test",
-      "id": 4
-    },
-    {
-      "email": "wwww@dd.jj",
-      "password": "jjjjjj",
-      "name": "jjjjjj",
-      "id": 5
     }
   ],
   "bill": {

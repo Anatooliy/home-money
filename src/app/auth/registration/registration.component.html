@@ -18,6 +18,7 @@
         >
             <span *ngIf="form.get('email')['errors']['required']">Email can't be emty</span>
             <span *ngIf="form.get('email')['errors']['email']">Enter valid email</span>
+            <span *ngIf="form.get('email')['errors']['forbiddenEmail']">Email is already taken</span>            
         </span>
     </div>
     <div 
