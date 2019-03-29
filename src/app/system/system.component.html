@@ -1,0 +1,116 @@
+<div class="main-wrapper">
+    <div class="app">
+        <!--HEADER-->
+        <header class="header">
+            <div class="header-block header-block-search">
+                12:12:12
+            </div>
+            <div class="header-block header-block-nav">
+                <ul class="nav-profile">
+                    <li class="profile dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button">
+                            <span class="name">
+                                Здравствуйте, Ирина
+                            </span>
+                        </a>
+                        <div class="dropdown-menu profile-dropdown-menu">
+                            <a class="dropdown-item" href="#"> <i class="fa fa-gear icon"></i>Сделать запись</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#"><i class="fa fa-power-off icon"></i>Выйти</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </header>
+        <!--HEADER-->
+        <!--SIDEBAR-->
+        <aside class="sidebar">
+            <div class="sidebar-container">
+                <div class="sidebar-header">
+                    <div class="brand">
+                        <div class="logo">
+                            <span class="l l1"></span>
+                            <span class="l l2"></span>
+                            <span class="l l3"></span>
+                            <span class="l l4"></span>
+                            <span class="l l5"></span>
+                        </div>
+                        Бухгалтерия
+                    </div>
+                </div>
+                <nav class="menu">
+                    <ul class="nav metismenu">
+                        <li class="active">
+                            <a href="#"> <i class="fa fa-building-o"></i>Счет</a>
+                        </li>
+                        <li>
+                            <a href="#"> <i class="fa fa-flash"></i>История</a>
+                        </li>
+                        <li>
+                            <a href="#"> <i class="fa fa-archive"></i>Планирование</a>
+                        </li>
+                        <li>
+                            <a href="#"> <i class="fa fa-plus-square"></i>Запись</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </aside>
+        <!--SIDEBAR-->
+        <!--CONTENT-->
+        <article class="content  dashboard-page">
+            <router-outlet></router-outlet>
+        </article>
+        <!--CONTENT-->
+      <!--MODAL-->
+      <div class="modal fade">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close">
+                <span>×</span>
+              </button>
+              <h4 class="modal-title">Фильтр</h4>
+            </div>
+            <div class="modal-body">
+              <div class="form-group">
+                <label class="control-label" for="period">Выберите период</label>
+                <select class="form-control" id="period">
+                  <option>тип</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label class="control-label">Выберите тип события</label>
+                <div>
+                  <label>
+                    <input
+                      class="checkbox"
+                      type="checkbox"
+                    >
+                    <span>еуче</span>
+                  </label>
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="control-label">Выберите категории</label>
+                <div>
+                  <label>
+                    <input
+                      class="checkbox"
+                      type="checkbox"
+                    >
+                    <span>еуче</span>
+                  </label>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary">Отмена</button>
+                <button type="button" class="btn btn-primary">Применить</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--MODAL-->
+    </div>
+</div>
