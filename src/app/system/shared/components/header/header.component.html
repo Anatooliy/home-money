@@ -1,6 +1,6 @@
 <header class="header">
   <div class="header-block header-block-search">
-      {{ date | date:'mm/dd/yy' }}
+      {{ date | stsMoment: 'YYYY-MM-DD' }}
   </div>
   <div class="header-block header-block-nav">
       <ul class="nav-profile">
