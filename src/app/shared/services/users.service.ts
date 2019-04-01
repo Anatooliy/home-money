@@ -27,7 +27,17 @@ export class UsersService extends BaseApi{
     // }
 
     getUserByEmail(email: string): Observable<User>{
-        return this.get(`users?email=${ email }`);
+        return this.get(`users?email=${ email }`)
+            .pipe(
+                map((user: User[]) => { 
+                    if(user[0]){ 
+                        return user[0]
+                    }  
+                    else{
+                        return undefined;
+                    } 
+                })
+            );
     }
 
     // createNewUser(user: User): Observable<User>{
