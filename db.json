@@ -14,28 +14,28 @@
     }
   ],
   "bill": {
-    "value": 10,
+    "value": 10000,
     "currency": "EUR"
   },
   "categories": [
     {
       "name": "Дом",
-      "capacity": 15000,
+      "capacity": 1000,
       "id": 1
     },
     {
       "name": "Еда",
-      "capacity": 10000,
+      "capacity": 500,
       "id": 2
     },
     {
       "id": 3,
       "name": "Машина",
-      "capacity": 7000
+      "capacity": 100
     },
     {
       "name": "Benamix",
-      "capacity": 100,
+      "capacity": 200,
       "id": 4
     }
   ],
@@ -43,7 +43,7 @@
     {
       "id": 1,
       "type": "income",
-      "amount": 1250,
+      "amount": 50,
       "category": 2,
       "date": "12.06.2017 19:49:02",
       "description": "Подарили еду в гостях"
@@ -51,14 +51,14 @@
     {
       "id": 2,
       "type": "outcome",
-      "amount": 1300,
+      "amount": 100,
       "category": 1,
       "date": "13.06.2017 19:49:02",
       "description": "Купил посудомоечную машину"
     },
     {
       "type": "income",
-      "amount": 1480,
+      "amount": 80,
       "category": 2,
       "date": "17.06.2017 14:00:48",
       "id": 3,
@@ -66,7 +66,7 @@
     },
     {
       "type": "outcome",
-      "amount": 2470,
+      "amount": 170,
       "category": 2,
       "date": "17.06.2017 14:00:58",
       "id": 4,
@@ -74,91 +74,19 @@
     },
     {
       "type": "outcome",
-      "amount": 4000,
+      "amount": 80,
       "category": 3,
       "date": "10.06.2017 14:01:58",
       "id": 5,
       "description": "Заправка + проход ТО"
     },
     {
-      "type": "income",
-      "amount": 10000,
+      "type": "outcome",
+      "amount": 200,
       "category": 4,
-      "date": "04/03/2019 13:35:59",
-      "description": "Test",
-      "id": 6
-    },
-    {
-      "type": "outcome",
-      "amount": 1000,
-      "category": 4,
-      "date": "04/03/2019 13:36:27",
-      "description": "Test",
-      "id": 7
-    },
-    {
-      "type": "outcome",
-      "amount": 10000,
-      "category": 1,
-      "date": "04/03/2019 13:36:56",
-      "description": "Test",
-      "id": 8
-    },
-    {
-      "type": "outcome",
-      "amount": 1000,
-      "category": 1,
-      "date": "04/03/2019 13:37:12",
-      "description": "Test",
-      "id": 9
-    },
-    {
-      "type": "outcome",
-      "amount": 10000,
-      "category": 1,
-      "date": "04/03/2019 13:53:52",
-      "description": "Test",
-      "id": 10
-    },
-    {
-      "type": "income",
-      "amount": 1000000,
-      "category": 1,
-      "date": "04/03/2019 13:55:12",
-      "description": "Test",
-      "id": 11
-    },
-    {
-      "type": "outcome",
-      "amount": 1000000,
-      "category": 1,
-      "date": "04/03/2019 13:55:36",
-      "description": "Test",
-      "id": 12
-    },
-    {
-      "type": "outcome",
-      "amount": 1,
-      "category": 1,
-      "date": "04/03/2019 13:55:43",
-      "description": " test",
-      "id": 13
-    },
-    {
-      "type": "outcome",
-      "amount": 2,
-      "category": 1,
-      "date": "04/03/2019 13:55:55",
-      "description": " test",
-      "id": 14
-    },
-    {
-      "type": "income",
-      "amount": 10,
-      "category": 1,
-      "date": "04/03/2019 14:19:57",
-      "description": "Test",
-      "id": 15
-    }
+      "date": "10.06.2017 14:01:58",
+      "id": 5,
+      "description": "Заправка + проход ТО"
+    }    
   ]
 }

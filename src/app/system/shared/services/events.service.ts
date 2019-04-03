@@ -1,8 +1,9 @@
-import { BaseApi } from 'src/app/shared/core/base-api';
 import { Injectable } from '@angular/core';
 import { Http } from '@angular/http';
 import { Observable } from 'rxjs';
+
 import { STSEvent } from '../models/event.model';
+import { BaseApi } from 'src/app/shared/core/base-api';
 
 @Injectable()
 export class EventService extends BaseApi{
@@ -12,6 +13,10 @@ export class EventService extends BaseApi{
 
     addEvent(event: STSEvent): Observable<STSEvent>{
         return this.post('events', event);
+    }
+
+    getEvents(): Observable<STSEvent[]>{
+        return this.get('events')
     }
 }
 

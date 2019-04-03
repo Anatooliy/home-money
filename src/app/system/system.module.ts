@@ -21,6 +21,8 @@ import { AddCategoryComponent } from './records-page/add-category/add-category.c
 import { EditCategoryComponent } from './records-page/edit-category/edit-category.component';
 import { CategoriesService } from './shared/services/categories.service';
 import { EventService } from './shared/services/events.service';
+import { ConverterPipe } from './shared/pipes/converter';
+
 
 @NgModule({
     imports: [
@@ -40,9 +42,10 @@ import { EventService } from './shared/services/events.service';
         BillCardComponent,
         CurrencyCardComponent,
         MomentPipe,
+        ConverterPipe,
         AddEventComponent,
         AddCategoryComponent,
-        EditCategoryComponent        
+        EditCategoryComponent             
     ],
     providers: [
         BillService,
