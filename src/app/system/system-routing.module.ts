@@ -8,7 +8,8 @@ import { RecordsPageComponent } from './records-page/records-page.component';
 import { HistoryDetailComponent } from './history-page/history-detail/history-detail.component';
 
 const routes: Routes = [
-    {path: 'system', component: SystemComponent, children:[
+    //{path: 'system', component: SystemComponent, children:[
+    {path: '', component: SystemComponent, children:[// -lasy load
         {path: 'bill', component: BillPageComponent},
         {path: 'history', component: HistoryPageComponent},
         {path: 'planning', component: PlanningPageComponent},
@@ -20,7 +21,7 @@ const routes: Routes = [
 @NgModule({
     imports: [RouterModule.forChild(routes)],
     exports: [RouterModule]
-})
+}) 
 export class SystemRoutingModule{
 
 }
