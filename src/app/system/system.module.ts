@@ -22,6 +22,11 @@ import { EditCategoryComponent } from './records-page/edit-category/edit-categor
 import { CategoriesService } from './shared/services/categories.service';
 import { EventService } from './shared/services/events.service';
 import { ConverterPipe } from './shared/pipes/converter';
+import { HistoryDetailComponent } from './history-page/history-detail/history-detail.component';
+import { HistoryEventsComponent } from './history-page/history-events/history-events.component';
+import { HistoryChartComponent } from './history-page/history-chart/history-chart.component';
+import { HistoryFilterComponent } from './history-page/history-filter/history-filter.component';
+import { FilterPipe } from './shared/pipes/filter.pipe';
 
 
 @NgModule({
@@ -45,7 +50,12 @@ import { ConverterPipe } from './shared/pipes/converter';
         ConverterPipe,
         AddEventComponent,
         AddCategoryComponent,
-        EditCategoryComponent             
+        EditCategoryComponent,
+        HistoryDetailComponent,
+        HistoryEventsComponent,
+        HistoryChartComponent,
+        HistoryFilterComponent,
+        FilterPipe             
     ],
     providers: [
         BillService,
