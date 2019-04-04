@@ -8,6 +8,7 @@ import { AppComponent } from './app.component';
 import { AuthModule } from './auth/auth.module';
 import { UsersService } from './shared/services/users.service';
 import { AuthService } from './shared/services/auth.service';
+import { AuthGuard } from './shared/services/auth.guard';
 //import { SystemModule } from './system/system.module'; -lasy load
 
 @NgModule({
@@ -24,7 +25,8 @@ import { AuthService } from './shared/services/auth.service';
   ],
   providers: [
     UsersService, 
-    AuthService
+    AuthService,
+    AuthGuard
   ],
   bootstrap: [AppComponent]
 })
