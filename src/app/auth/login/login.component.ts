@@ -6,11 +6,14 @@ import { UsersService } from 'src/app/shared/services/users.service';
 import { User } from 'src/app/shared/models/user.model';
 import { Message } from 'src/app/shared/models/message.model';
 import { AuthService } from 'src/app/shared/services/auth.service';
+import { fadeStateTrigger } from 'src/app/shared/animations/fade.animation';
+import { Title, Meta } from '@angular/platform-browser';
 
 @Component({
   selector: 'sts-login',
   templateUrl: './login.component.html',
-  styleUrls: ['./login.component.scss']
+  styleUrls: ['./login.component.scss'],
+  animations: [fadeStateTrigger]
 })
 export class LoginComponent implements OnInit {
 
@@ -21,8 +24,22 @@ export class LoginComponent implements OnInit {
     private userService: UsersService,
     private authService: AuthService,
     private router: Router,
-    private route: ActivatedRoute
-  ) { }
+    private route: ActivatedRoute,
+    private title: Title,
+    private meta: Meta
+  ) { 
+    title.setTitle('Вход в систему');
+    meta.addTags([
+      {
+        name: 'keywords',
+        content: 'login, cyctem'
+      },
+      {
+        name: 'description',
+        content: 'Page for comming'
+      }
+    ]);
+  }
 
   ngOnInit() {
     this.message = new Message('danger', '');

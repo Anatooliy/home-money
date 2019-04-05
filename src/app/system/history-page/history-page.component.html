@@ -8,7 +8,9 @@
       </button>
     </div>
 </div>
-<div *ngIf="!isLoaded" class="text-center">Loading...</div>
+<div *ngIf="!isLoaded" class="text-center">
+    <sts-loader></sts-loader>
+</div>
 <div *ngIf="isLoaded">
   <sts-history-chart [data]="chartData"></sts-history-chart>
 
